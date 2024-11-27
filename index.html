@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Create a container for the To-Do List -->
+    <div id="todo-container">
+        <!-- To-Do List Header -->
+        <div id="header">
+            <h1>To-Do List</h1>
+        </div>
+
+        <!-- Input Box -->
+        <div id="todo-form">
+            <input type="text" class="input-item" id="input-box" name="input-box" placeholder="Enter your task">
+            <button id="input-button" onclick="addTask()">Add</button>
+            <button id="clear-btn">Clear All</button>
+        </div>
+
+        <!-- Task List -->
+        <h2>Task List</h2>
+        <ul id="list-container"></ul>
+        <hr />
+
+        <!-- Task List Counter -->
+        <div class="counter-container">
+            <div id="task-counters">
+                Completed: <span id="completed-count">0</span>
+                Remaining: <span id="remaining-count">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include the JavaScript file -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
